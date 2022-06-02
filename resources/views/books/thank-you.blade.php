@@ -16,6 +16,9 @@
 
     <ul class="list-unstyled">
     <!-- 1. Display all the reserved books -->
+    @foreach ($reserved_books as $books)
+    <li>{{ $books['title'] }} by {{ $books['author'] }}, {{ $books['year_published'] }}</li>
+    @endforeach
     </ul>
 
 </div>
